@@ -48,4 +48,10 @@ select * from time_bucket where tx_hour = '2017-12-01T17' and tx_ts > '2017-12-0
                                             Skipped 0/0 non-slice-intersecting sstables, included 0 due to tombstones [ReadStage-2] | 2017-12-03 11:56:12.045000 | 127.0.0.1 |            694 | 127.0.0.1
                                                                             Merged data from memtables and 0 sstables [ReadStage-2] | 2017-12-03 11:56:12.045000 | 127.0.0.1 |            868 | 127.0.0.1
                                                                                    Read 51 live and 0 tombstone cells [ReadStage-2] | 2017-12-03 11:56:12.045001 | 127.0.0.1 |            948 | 127.0.0.1
-                                                                                                                   Request complete | 2017-12-03 11:56:12.045304 | 127.0.0.1 |           1304 | 127.0.0.1
+
+
+                                                                                                       Request complete | 2017-12-03 11:56:12.045304 | 127.0.0.1 |           1304 | 127.0.0.1
+
+
+
+select * from time_bucket where tx_hour = '2017-12-01T17' and tx_ts = '2017-12-01T17:58:25';                                                                                                       

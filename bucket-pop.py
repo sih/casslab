@@ -20,7 +20,7 @@ def make_date():
 
 insertCql = session.prepare("INSERT INTO lab.time_bucket (tx_hour, tx_ts, record_id) VALUES(?,?,?)")
 
-for i in range(0, 779035):
+for i in range(0, 2880000): # 37% chance that any individual second will have multiple entres
     ts = make_date()
     dt = ts[:13]
     record_id = str(uuid.uuid4())
